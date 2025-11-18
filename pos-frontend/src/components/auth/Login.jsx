@@ -44,7 +44,7 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label className="block text-[#ababab] mb-2 mt-3 text-sm font-medium">
-            Employee Email
+          Email
           </label>
           <div className="flex item-center rounded-lg p-5 px-4 bg-[#1f1f1f]">
             <input
@@ -52,7 +52,7 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter employee email"
+              placeholder="Enter email"
               className="bg-transparent flex-1 text-white focus:outline-none"
               required
             />

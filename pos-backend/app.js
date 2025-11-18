@@ -7,6 +7,7 @@ const createHttpError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 
+
 const app = express();
 
 const PORT = config.port || 3000;
@@ -30,6 +31,8 @@ app.get("/", (req, res) => {
 app.use("/api/user", require("./routes/userRoute"));
 app.use("/api/order", require("./routes/orderRoute"));
 app.use("/api/table", require("./routes/tableRoute"));
+app.use("/api/payment", require("./routes/paymentRoute"));
+
 // Global Error Handler Middleware
 app.use(globalErrorHandler)
 

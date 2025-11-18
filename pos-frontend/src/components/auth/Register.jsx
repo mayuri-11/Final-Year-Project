@@ -54,7 +54,7 @@ const Register = ({setIsRegister}) => {
       <form onSubmit={handleSubmit}>
         <div>
           <label className="block text-[#ababab] mb-2 text-sm font-medium">
-            Employee Name
+          Name
           </label>
           <div className="flex item-center rounded-lg p-5 px-4 bg-[#1f1f1f]">
             <input
@@ -62,7 +62,7 @@ const Register = ({setIsRegister}) => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Enter employee name"
+              placeholder="Enter name"
               className="bg-transparent flex-1 text-white focus:outline-none"
               required
             />
@@ -70,7 +70,7 @@ const Register = ({setIsRegister}) => {
         </div>
         <div>
           <label className="block text-[#ababab] mb-2 mt-3 text-sm font-medium">
-            Employee Email
+            Email
           </label>
           <div className="flex item-center rounded-lg p-5 px-4 bg-[#1f1f1f]">
             <input
@@ -78,7 +78,7 @@ const Register = ({setIsRegister}) => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter employee email"
+              placeholder="Enter email"
               className="bg-transparent flex-1 text-white focus:outline-none"
               required
             />
@@ -86,7 +86,7 @@ const Register = ({setIsRegister}) => {
         </div>
         <div>
           <label className="block text-[#ababab] mb-2 mt-3 text-sm font-medium">
-            Employee Phone
+          Phone
           </label>
           <div className="flex item-center rounded-lg p-5 px-4 bg-[#1f1f1f]">
             <input
@@ -94,7 +94,7 @@ const Register = ({setIsRegister}) => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="Enter employee phone"
+              placeholder="Enter phone"
               className="bg-transparent flex-1 text-white focus:outline-none"
               required
             />

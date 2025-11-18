@@ -1,12 +1,12 @@
 import axios from "axios";
-
+//import { axiosWrapper } from "./axiosWrapper"
 const defaultHeader = {
   "Content-Type": "application/json",
   Accept: "application/json",
 };
 
 export const axiosWrapper = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL,
+  baseURL: "http://localhost:8000",
   withCredentials: true,
   headers: { ...defaultHeader },
 });
